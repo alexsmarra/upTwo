@@ -2,7 +2,7 @@
 #page-home {
     height: 100vh;
 
-    background: url('../assets/home-background.svg') no-repeat;
+    /* background: url('../assets/my-background.png') no-repeat; */
     background-position: 35vw bottom;
 }
 
@@ -20,10 +20,19 @@
 #page-home header {
 
     margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+#page-home header img {
+    width: 175px;
+    height: 100px;
 }
 
 #page-home header a {
@@ -44,17 +53,23 @@
 }
 
 #page-home main {
-    max-width: 560px;
-
     flex: 1;
-
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90px;
+}
+
+#page-home main div {
+
+}
+
+#page-home main img {
+    width: 800px;
 }
 
 #page-home main h1 {
-    font-size: 54px;
+    font-size: 45px;
 }
 
 #page-home main p {
@@ -63,7 +78,8 @@
     margin-top: 24px;
 }
 
-#page-home main a {
+#page-home main a#pesquisar,
+#page-home main a#cadastrar {
     width: 100%;
     max-width: 360px;
     height: 72px;
@@ -80,11 +96,19 @@
     transition: 400ms;
 }
 
-#page-home main a:hover {
-    background-color: #2fb86e;
+#page-home main a#cadastrar,
+#page-home main a#pesquisar {
+    /* justify-content: center; */
+    display: flex;
+    /* align-items: center; */
 }
 
-#page-home main a span {
+/* #page-home main a#pesquisar:hover,
+#page-home main a#cadastrar:hover {
+    background-color: #2fb86e;
+} */
+
+/* #page-home main a#pesquisar span {
     width: 72px;
     height: 72px;
 
@@ -96,18 +120,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+#page-home main a#cadastrar span,
+#page-home main a#pesquisar span {
 }
 
-#page-home main a span::after {
+#page-home main a#cadastrar img,
+#page-home main a#pesquisar img {
+    width: 27px;
+    margin-top: 23px;
+    margin-left: 30px;
+}
+
+#page-home main a#cadastrar div,
+#page-home main a#pesquisar div {
+    background: #05B24D;
+    /* flex: 1; */
+    height: 100%;
+    padding: 0 23px;
+    border-radius: 8px;
+}
+
+/* #page-home main a span::after {
     content: "";
-    background-image: url('../assets/search.svg');
+    background-image: url('../assets/');
 
     width: 20px;
     height: 20px;
-}
-
+} */
+/* 
 #page-home main a strong {
     flex: 1;
     color: white;
     text-align: center;
+} */
+
+#page-home main a#cadastrar {
+    color: white;
+}
+
+#page-home main a#pesquisar {
+    color: white;
 }

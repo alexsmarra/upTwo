@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="/styles/modal.css">
 {% endblock styles %}
 
-
 {% block content %}
     <div class="content">
         <header>
-            <img src="/assets/logo.svg" alt="Logomarca">
-            <a href="/create-point">
-                <span></span>
-                Cadastre um ponto de coleta
-            </a> 
+                <img src="/assets/my-logo.png" alt="Logomarca">
+                <h1>Recicle Certo</h1>
         </header>
 
         <main>
-            <h1>Seu marketplace de coleta de resíduos</h1>
+            <img src="/assets/my-background.png" alt="background-map-brasil">
+            <div>   
+                <h1>Aqui você ajudará o Brasil a ser um país mais sustentável</h1>
+                <p>Encontre um ponto de coleta mais próximo ou cadastre um novo ponto de coleta.</p>
+            
+                <a id="pesquisar" href="#">
+                    <div>
+                        <img src="/assets/my-search.svg" alt="">
+                    </div>
+                    <span></span>
+                    Pesquisar pontos de coleta
+                </a>
                 
-            <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
-        
-            <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
+                <a id="cadastrar" href="/create-point">
+                    <div>
+                        <img src="/assets/log-in.svg" alt="">
+                    </div>
+                    <span></span>
+                    Cadastrar um ponto de coleta
+                </a> 
+            </div>
         </main>
     </div>
 {% endblock content %}
