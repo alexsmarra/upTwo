@@ -47,11 +47,11 @@ form {
     background-color: white;
 
     margin: 80px auto;
-    padding: 64px;
+    padding: 65px;
 
     border-radius: 8px;
 
-    max-width: 730px;
+    max-width: 1030px;
 }
 
 
@@ -151,7 +151,7 @@ form button:hover{
 
 .items-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 

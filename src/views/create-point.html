@@ -16,25 +16,25 @@
 
     <form action="/savepoint" method="POST">
 
-        <h1>Cadastro do ponto de coleta</h1>
+        <h1>Cadastro do local de coleta</h1>
 
         <fieldset>
             <legend>
-                <h2>Dados da entidade</h2>
+                <h2>Dados da organização</h2>
             </legend>
 
 
             <div class="field-group">
                 <div class="field">
-                    <label for="name">Nome da entidade</label>
+                    <label for="name">Nome da organização</label>
                     <input type="text" name="name" required="required">
                 </div>
                 <div class="field">
-                    <label for="name">Imagem da entidade</label>
+                    <label for="name">Imagem da organização</label>
                     <input 
                         type="url" 
                         name="image" 
-                        placeholder="http://"
+                        placeholder="endereço url da imagem"
                         required="required">
                 </div>
             </div>
@@ -72,39 +72,28 @@
 
         <fieldset>
             <legend>
-                <h2>Itens de coleta</h2>
-                <span>Selecione um ou mais itens abaixo</span>
+                <h2>Selecione os itens para coleta</h2>
             </legend>
 
             <div class="items-grid">
                 <li data-id="Lâmpadas">
-                    <img src="/assets/lampadas.svg" alt="Lâmpadas">
-                    <span>Lâmpadas</span>
-                </li>
-
-                <li data-id="Pilhas e Baterias">
-                    <img src="/assets/baterias.svg" alt="Pilhas e Baterias">
-                    <span>Pilhas e Baterias</span>
+                    <img src="/assets/my-vidro.png" alt="Lâmpadas">
+                    <span>Vidros</span>
                 </li>
 
                 <li data-id="Papéis e Papelão">
-                    <img src="/assets/papeis-papelao.svg" alt="Papéis e Papelão">
-                    <span>Papéis e Papelão</span>
+                    <img src="/assets/my-plastic.png" alt="Papéis e Papelão">
+                    <span>Plásticos</span>
                 </li>
 
                 <li data-id="Resíduos Eletrônicos">
-                    <img src="/assets/eletronicos.svg" alt="Resíduos Eletrônicos">
+                    <img src="/assets/my-computer.png" alt="Resíduos Eletrônicos">
                     <span>Resíduos Eletrônicos</span>
                 </li>
 
                 <li data-id="Resíduos Orgânicos">
-                    <img src="/assets/organicos.svg" alt="Resíduos Orgânicos">
+                    <img src="/assets/my-organic.png" alt="Resíduos Orgânicos">
                     <span>Resíduos Orgânicos</span>
-                </li>
-
-                <li data-id="Óleo de Cozinha">
-                    <img src="/assets/oleo.svg" alt="Óleo de Cozinha">
-                    <span>Óleo de Cozinha</span>
                 </li>
             </div>
 
@@ -112,7 +101,7 @@
 
         </fieldset>
 
-        <button type="submit">Cadastrar ponto de coleta</button>
+        <button type="submit">Cadastrar local de coleta</button>
     </form>
 
     
