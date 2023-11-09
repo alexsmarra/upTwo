@@ -20,6 +20,8 @@ db.serialize(() => {
             address2 TEXT,
             state TEXT,
             city TEXT,
+            phone TEXT,
+            website TEXT,
             items TEXT
         );
     `)
@@ -33,11 +35,15 @@ db.serialize(() => {
             address2,
             state,
             city,
+            phone,
+            website,
             items
-        ) VALUES (?,?,?,?,?,?,?);
+        ) VALUES (?,?,?,?,?,?,?,?,?);
     `
 
     const values = [
+        "",
+        "",
         "",
         "",
         "",
