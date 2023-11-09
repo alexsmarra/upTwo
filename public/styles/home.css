@@ -29,6 +29,10 @@
     justify-content: space-between;
 }
 
+#page-home header h1 {
+    font-weight: 700;
+} 
+
 
 #page-home header img {
     width: 175px;
@@ -66,6 +70,7 @@
 
 #page-home main img {
     width: 800px;
+    margin-bottom: 60px;
 }
 
 #page-home main h1 {
@@ -76,6 +81,7 @@
     font-size: 24px;
     line-height: 38px;
     margin-top: 24px;
+    font-style: italic;
 }
 
 #page-home main a#pesquisar,
