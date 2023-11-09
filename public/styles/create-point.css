@@ -1,16 +1,24 @@
+body { 
+    background: rgb(247, 246, 246);
+}
+
 #page-create-point {
-    width: 90%;
-    max-width: 1100px;
+    /* width: 90%; */
+    /* max-width: 1100px; */
 
     margin: 0 auto;
 }
 
 #page-create-point header {
-    margin-top: 48px;
+    /* margin-top: 48px; */
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 26px 0;
+    background: #99cc99;
+    border-bottom: 3px solid #D3DE29;
+    box-shadow: 0 0 2px 0 #00000071;
 }
 
 
@@ -50,6 +58,7 @@ form {
     padding: 65px;
 
     border-radius: 8px;
+    box-shadow: inset 0px 0px 2px 2px #00000017;
 
     max-width: 1030px;
 }
@@ -188,8 +197,8 @@ form button:hover{
 }
 
 .items-grid li.selected {
-    background: #e1faec;
-    border: 2px solid #34cb79;
+    background: #ECF1A7;
+    border: 2px solid #99cc99;
 }
 
 .items-grid li img,
