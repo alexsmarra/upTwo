@@ -33,15 +33,15 @@
                     <h1>{{ place.name }}</h1>
                     <h3>{{ replaceCommas(place.items) }}</h3>
                     <p>
-                        {{ place.city }}, {{ place.state }}
+                        <p>Endereço:</p>
+                        <span>Estado: </span>{{ place.state }},
+                        <br>
+                        <span>Cidade: </span>{{ place.city }},
+                        <span>rua </span>{{ place.address }}, <span>número </span> {{ place.address2 }}
                         <br/>
-                        {{ place.address }}
+                        <span>Telefone: </span>{{ place.phone }}
                         <br/>
-                        {{ place.address2 }}
-                        <br/>
-                        {{ place.phone }}
-                        <br/>
-                        {{ place.website }}
+                        <span>Website: </span>{{ place.website }}
                     </p>
                 </div>
 
