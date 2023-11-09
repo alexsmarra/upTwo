@@ -38,13 +38,13 @@ db.serialize(() => {
     `
 
     const values = [
-        "https://images.unsplash.com/photo-1606037150583-fb842a55bae7?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "Coleta do Bem",
-        "Perdões, Padre Eustáquio",
-        "Número 590",
-        "Minas Gerais",
-        "Belo Horizonte",
-        "Resíduos Eletrônicos, Plásticos"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 
     function afterInsertData(err) {

@@ -196,3 +196,13 @@ form button:hover{
 .items-grid li span {
     pointer-events: none;
 }
+
+.items-grid li:nth-child(1) img {
+    width: 100px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.items-grid li img {
+    width: 80px;
+}
