@@ -152,6 +152,8 @@ form button {
     margin-top:40px;
 
     transition: background-color 400ms;
+
+    cursor: pointer;
 }
 
 form button:hover{
