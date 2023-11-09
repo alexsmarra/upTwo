@@ -20,8 +20,7 @@
     {% if total > 0 %}
 
         <h4>
-            <strong>{{total}} pontos</strong>
-            encontrados
+            Pontos encontrados:
         </h4>
 
         <div class="cards">
@@ -32,7 +31,7 @@
                 <div class="card">
                     <img src="{{ place.image }}" alt="{{ place.name }}">
                     <h1>{{ place.name }}</h1>
-                    <h3>{{ place.items }}</h3>
+                    <h3>{{ replaceCommas(place.items) }}</h3>
                     <p>
                         {{ place.city }}, {{ place.state }}
                         <br/>

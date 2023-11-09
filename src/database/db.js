@@ -24,7 +24,7 @@ db.serialize(() => {
         );
     `)
 
-    // // 2 Inserir dados na tabela
+    // 2 Inserir dados na tabela
     const query = `
         INSERT INTO places (
             image,
@@ -38,13 +38,13 @@ db.serialize(() => {
     `
 
     const values = [
-        "https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-        "Papersider",
-        "Guilherme Gemballa, Jardim América",
-        "Número 260",
-        "Santa Catarina",
-        "Rio do Sul",
-        "Resíduos Eletrônicos, Lâmpadas"
+        "https://images.unsplash.com/photo-1606037150583-fb842a55bae7?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Coleta do Bem",
+        "Perdões, Padre Eustáquio",
+        "Número 590",
+        "Minas Gerais",
+        "Belo Horizonte",
+        "Resíduos Eletrônicos, Plásticos"
     ]
 
     function afterInsertData(err) {
@@ -55,6 +55,21 @@ db.serialize(() => {
         console.log("Cadastrado com sucesso")
         console.log(this)
     }
+
+    // const checkQuery = `SELECT COUNT(*) as count FROM places;`
+
+    // db.get(checkQuery, function (err, row) {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+
+    //     if (row.count === 0) {
+    //         // Se não houver registros, inserir os dados
+    //         db.run(query, values, afterInsertData);
+    //     } else {
+    //         console.log("Os dados já foram inseridos anteriormente.");
+    //     }
+    // });
 
     db.run(query, values, afterInsertData)
 

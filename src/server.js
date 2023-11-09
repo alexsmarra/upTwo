@@ -18,6 +18,9 @@ nunjucks.configure("src/views", {
     noCache: true
 })
 
+function replaceCommas(items) {
+    return items.replace(/,/g, ', ');
+}
 
 // configurar caminhos da minha aplicação
 // página inicial
@@ -102,7 +105,7 @@ server.get("/search", (req, res) => {
         const total = rows.length
 
         // mostrar a página html com os dados do banco de dados
-        return res.render("search-results.html", { places: rows, total: total})
+        return res.render("search-results.html", { places: rows, total: total, replaceCommas: replaceCommas })
     })
 })
 
