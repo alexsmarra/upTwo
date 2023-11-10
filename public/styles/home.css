@@ -1,8 +1,5 @@
-
 #page-home {
     height: 100vh;
-
-    /* background: url('../assets/my-background.png') no-repeat; */
     background-position: 35vw bottom;
 }
 
@@ -104,29 +101,8 @@
 
 #page-home main a#cadastrar,
 #page-home main a#pesquisar {
-    /* justify-content: center; */
     display: flex;
-    /* align-items: center; */
 }
-
-/* #page-home main a#pesquisar:hover,
-#page-home main a#cadastrar:hover {
-    background-color: #2fb86e;
-} */
-
-/* #page-home main a#pesquisar span {
-    width: 72px;
-    height: 72px;
-
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-
-    background-color: rgba(0, 0, 0, 0.08);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 #page-home main a#cadastrar span,
 #page-home main a#pesquisar span {
@@ -142,25 +118,10 @@
 #page-home main a#cadastrar div,
 #page-home main a#pesquisar div {
     background: #05B24D;
-    /* flex: 1; */
     height: 100%;
     padding: 0 23px;
     border-radius: 8px;
 }
-
-/* #page-home main a span::after {
-    content: "";
-    background-image: url('../assets/');
-
-    width: 20px;
-    height: 20px;
-} */
-/* 
-#page-home main a strong {
-    flex: 1;
-    color: white;
-    text-align: center;
-} */
 
 #page-home main a#cadastrar {
     color: white;
