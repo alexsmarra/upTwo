@@ -200,7 +200,7 @@ form button:hover{
     pointer-events: none;
 }
 
-.items-grid li:nth-child(1) img {
+.items-grid li:nth-child(3) img {
     width: 100px;
     margin-top: -10px;
     margin-bottom: -10px;

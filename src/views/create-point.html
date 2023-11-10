@@ -29,11 +29,11 @@
                     <input type="text" name="name" required="required">
                 </div>
                 <div class="field">
-                    <label for="name">Imagem da organização</label>
+                    <label for="name">Url para imagem da organização</label>
                     <input 
                         type="url" 
                         name="image" 
-                        placeholder="endereço url da imagem"
+                        placeholder="https://..."
                         required="required">
                 </div>
             </div>
@@ -82,7 +82,6 @@
                     <label for="website">Website da organização</label>
                     <input  
                         name="website" 
-                        placeholder="url da organização"
                         required="required">
                 </div>
             </div>
@@ -95,6 +94,16 @@
             </legend>
 
             <div class="items-grid">
+                <li data-id="Resíduos Orgânicos">
+                    <img src="/assets/my-organic.png" alt="Resíduos Orgânicos">
+                    <span>Resíduos Orgânicos</span>
+                </li>
+
+                <li data-id="Papéis">
+                    <img src="/assets/my-paper.png" alt="Papéis">
+                    <span>Papéis</span>
+                </li>
+
                 <li data-id="Vidros">
                     <img src="/assets/my-vidro.png" alt="Vidros">
                     <span>Vidros</span>
@@ -110,14 +119,20 @@
                     <span>Resíduos Eletrônicos</span>
                 </li>
 
-                <li data-id="Resíduos Orgânicos">
-                    <img src="/assets/my-organic.png" alt="Resíduos Orgânicos">
-                    <span>Resíduos Orgânicos</span>
+
+                <li data-id="Metal">
+                    <img src="/assets/my-metal.png" alt="Metal">
+                    <span>Metal</span>
                 </li>
 
-                <li data-id="Demais Resíduos inorgânicos">
-                    <img src="/assets/my-demais-inorganic.png" alt="Demais Resíduos inorgânicos">
-                    <span>Demais Resíduos inorgânicos</span>
+                <li data-id="Resíduos Infectantes">
+                    <img src="/assets/my-infective.png" alt="Resíduos Infectantes">
+                    <span>Resíduos Infectantes</span>
+                </li>
+
+                <li data-id="Resíduos Radioativos">
+                    <img src="/assets/my-radioative.png" alt="Resíduos Radioativos">
+                    <span>Resíduos Radioativos</span>
                 </li>
             </div>
 
